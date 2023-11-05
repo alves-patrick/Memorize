@@ -5,4 +5,17 @@
 //  Created by Patrick Alves on 04/11/23.
 //
 
-import Foundation
+import SwiftUI
+
+class EmojiMemoryGame {
+    
+    private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards: <#[MemoryGame<String>.Card]#>)
+    
+    var cards: Array<MemoryGame<String>.Card> {
+        return model.cards
+    }
+    
+    func choose(_ card: MemoryGame<String>.Card) {
+        model.choose(card: card)
+    }
+}
