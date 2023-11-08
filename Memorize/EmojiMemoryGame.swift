@@ -9,7 +9,7 @@ import SwiftUI
 
 class EmojiMemoryGame {
     
-    private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards: <#[MemoryGame<String>.Card]#>)
+    private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards:)
     
     var cards: Array<MemoryGame<String>.Card> {
         return model.cards
